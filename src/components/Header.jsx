@@ -57,7 +57,6 @@ function Header() {
         id="mobile-navigation"
         className={`mobile-nav${menuOpen ? ' is-open' : ''}`}
         aria-hidden={!menuOpen}
-        inert={!menuOpen || undefined}
       >
         <nav aria-label="Mobile">
           {navLinks.map((link) => (

@@ -11,10 +11,12 @@ function BookingOffer() {
           subtitle="A warm welcome for first-time Meow Manor guests."
         />
         <article className="offer-card">
-          <span className="badge offer-card__badge">{bookingOffer.badge}</span>
-          <h3 id="offer-heading" className="offer-card__title">
-            {bookingOffer.title}
-          </h3>
+          <div className="offer-card__top">
+            <h3 id="offer-heading" className="offer-card__title">
+              {bookingOffer.title}
+            </h3>
+            <span className="badge offer-card__badge">{bookingOffer.badge}</span>
+          </div>
           <p className="offer-card__highlight">{bookingOffer.highlight}</p>
           <ul className="offer-card__terms">
             {bookingOffer.terms.map((term) => (

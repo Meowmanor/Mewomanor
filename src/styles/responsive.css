@@ -77,6 +77,10 @@
   .nav-desktop {
     display: flex;
   }
+
+  .mobile-nav {
+    display: none !important;
+  }
 }
 
 @media (min-width: 1024px) {

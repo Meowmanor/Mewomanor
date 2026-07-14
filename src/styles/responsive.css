@@ -1,0 +1,89 @@
+@media (min-width: 640px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-field--full {
+    grid-column: 1 / -1;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+@media (min-width: 900px) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: flex;
+  }
+
+  .header-actions .btn--book-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .meal-plans-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .contact-grid .contact-card:nth-child(4),
+  .contact-grid .contact-card:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 899px) {
+  .header-actions .btn--book-desktop {
+    display: none;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .container {
+    width: min(100% - 1.25rem, var(--max-width));
+  }
+
+  .brand__text {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+}

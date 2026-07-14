@@ -22,8 +22,8 @@ function Header() {
             src={logo}
             alt="Meow Manor logo"
             className="brand__logo"
-            width="48"
-            height="48"
+            width="40"
+            height="40"
           />
           <span className="brand__text">{businessConfig.businessName}</span>
         </a>
@@ -38,9 +38,6 @@ function Header() {
 
         <div className="header-actions">
           <a href="#booking" className="btn btn--book-desktop">
-            Book Now
-          </a>
-          <a href="#booking" className="btn btn--book-mobile" onClick={closeMenu}>
             Book Now
           </a>
           <button

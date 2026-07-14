@@ -15,11 +15,59 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .hero__actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero__actions .btn {
+    width: auto;
+    min-width: 12rem;
+  }
+
+  .hero__logo-wrap {
+    width: min(13rem, 60%);
+  }
 }
 
 @media (min-width: 900px) {
+  :root {
+    --header-height: 4.5rem;
+  }
+
+  .brand__logo {
+    width: 3rem;
+    height: 3rem;
+  }
+
   .hero__grid {
     grid-template-columns: 1.1fr 0.9fr;
+    gap: 2.5rem;
+  }
+
+  .hero__visual {
+    order: 0;
+    min-height: 18rem;
+    padding: 1.5rem;
+  }
+
+  .hero__content {
+    text-align: left;
+    order: -1;
+  }
+
+  .hero__actions {
+    justify-content: flex-start;
+  }
+
+  .hero__trust {
+    display: inline-flex;
+    width: auto;
+    text-align: left;
+  }
+
+  .hero__logo-wrap {
+    width: min(16rem, 70%);
   }
 
   .menu-toggle {
@@ -28,10 +76,6 @@
 
   .nav-desktop {
     display: flex;
-  }
-
-  .header-actions .btn--book-mobile {
-    display: none;
   }
 }
 
@@ -68,22 +112,50 @@
   .nav-desktop {
     display: none;
   }
+
+  .section {
+    padding-block: clamp(2.5rem, 8vw, 3.75rem);
+  }
+
+  .section-heading {
+    margin-bottom: 1.75rem;
+  }
+
+  .story-combined__media {
+    max-width: 100%;
+  }
+
+  .contact-card,
+  .pricing-card,
+  .benefits-box,
+  .booking-form {
+    padding: 1.15rem;
+  }
 }
 
-@media (max-width: 374px) {
+@media (max-width: 480px) {
   .container {
     width: min(100% - 1.25rem, var(--max-width));
   }
 
   .brand__text {
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
-  .btn {
-    width: 100%;
+  .menu-toggle {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 
-  .hero__actions .btn {
-    width: 100%;
+  .hero__visual {
+    padding: 0.85rem;
+  }
+
+  .hero__logo-wrap {
+    width: min(9.5rem, 52%);
+  }
+
+  .hero__paw {
+    font-size: 1.15rem;
   }
 }

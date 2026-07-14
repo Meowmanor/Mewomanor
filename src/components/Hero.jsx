@@ -5,21 +5,6 @@ function Hero() {
   return (
     <section id="home" className="section hero" aria-labelledby="hero-heading">
       <div className="container hero__grid">
-        <div className="hero__content">
-          <h1 id="hero-heading">{heroContent.heading}</h1>
-          <p className="hero__tagline">{heroContent.tagline}</p>
-          <p className="hero__description">{heroContent.description}</p>
-          <div className="hero__actions">
-            <a href={heroContent.primaryCta.href} className="btn">
-              {heroContent.primaryCta.label}
-            </a>
-            <a href={heroContent.secondaryCta.href} className="btn btn--secondary">
-              {heroContent.secondaryCta.label}
-            </a>
-          </div>
-          <p className="hero__trust">{heroContent.trustLine}</p>
-        </div>
-
         <div className="hero__visual" aria-hidden="false">
           <span className="hero__paw hero__paw--1" aria-hidden="true">
             🐾
@@ -42,6 +27,21 @@ function Hero() {
               height="420"
             />
           </div>
+        </div>
+
+        <div className="hero__content">
+          <h1 id="hero-heading">{heroContent.heading}</h1>
+          <p className="hero__tagline">{heroContent.tagline}</p>
+          <p className="hero__description">{heroContent.description}</p>
+          <div className="hero__actions">
+            <a href={heroContent.primaryCta.href} className="btn">
+              {heroContent.primaryCta.label}
+            </a>
+            <a href={heroContent.secondaryCta.href} className="btn btn--secondary">
+              {heroContent.secondaryCta.label}
+            </a>
+          </div>
+          <p className="hero__trust">{heroContent.trustLine}</p>
         </div>
       </div>
     </section>

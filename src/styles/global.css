@@ -54,14 +54,56 @@ body {
   color: var(--color-text);
 }
 
-/* Stop Android/Chrome from force-inverting our light brand colours */
+/* Stop Android/Chrome/WhatsApp from force-inverting our light brand colours */
+html,
+body,
+#root,
+.site-header,
+.section,
+.hero,
+.card,
+.booking-form,
+.site-footer {
+  color-scheme: only light;
+}
+
+html,
+body,
+#root {
+  background-color: #FFF9F2 !important;
+  color: #3B1E13 !important;
+}
+
+.site-header {
+  background: #FFF9F2 !important;
+  color: #3B1E13 !important;
+}
+
+.btn {
+  background-color: #D99B77 !important;
+  color: #3B1E13 !important;
+  border-color: #3B1E13 !important;
+}
+
+.btn--secondary,
+.btn--ghost {
+  background-color: #FFF9F2 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html,
   body,
-  #root {
+  #root,
+  .site-header,
+  .section,
+  .hero,
+  .card,
+  .booking-form,
+  .site-footer,
+  .mobile-nav {
+    background-color: #FFF9F2 !important;
+    color: #3B1E13 !important;
     color-scheme: only light;
-    background-color: #FFF9F2;
-    color: #3B1E13;
   }
 }
 

@@ -3,11 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="color-scheme" content="light" />
+    <meta name="color-scheme" content="only light" />
     <meta name="supported-color-schemes" content="light" />
     <meta name="theme-color" content="#D99B77" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#D99B77" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#D99B77" />
+    <style>
+      /* Keep brand light colours even when phone/WhatsApp forces dark mode */
+      :root { color-scheme: only light; }
+      html, body {
+        background: #FFF9F2 !important;
+        color: #3B1E13 !important;
+        color-scheme: only light;
+      }
+    </style>
     <title>Meow Manor | Safe & Loving Cat Boarding</title>
     <meta
       name="description"

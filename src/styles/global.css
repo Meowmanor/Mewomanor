@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Nunito:wght@400;500;600;700&display=swap');
 
 :root {
+  color-scheme: only light;
   --color-primary: #D99B77;
   --color-text: #3B1E13;
   --color-background: #FFF9F2;
@@ -27,6 +28,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--header-height) + 1rem);
   overflow-x: clip;
+  color-scheme: only light;
+  background-color: #FFF9F2;
 }
 
 body {
@@ -39,10 +42,27 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   max-width: 100%;
+  width: 100%;
+  color-scheme: only light;
 }
 
 #root {
   max-width: 100%;
+  width: 100%;
+  overflow-x: clip;
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+/* Stop Android/Chrome from force-inverting our light brand colours */
+@media (prefers-color-scheme: dark) {
+  html,
+  body,
+  #root {
+    color-scheme: only light;
+    background-color: #FFF9F2;
+    color: #3B1E13;
+  }
 }
 
 body.menu-open {
@@ -104,6 +124,9 @@ ul {
 .container {
   width: min(100% - 2rem, var(--max-width));
   margin-inline: auto;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .section {
@@ -427,6 +450,7 @@ textarea:focus-visible {
 .hero__trust {
   display: block;
   width: 100%;
+  max-width: 100%;
   padding: 0.75rem 0.9rem;
   border-radius: var(--radius-sm);
   border: 1.5px dashed var(--color-text);
@@ -435,6 +459,9 @@ textarea:focus-visible {
   font-size: clamp(0.82rem, 2.8vw, 0.95rem);
   line-height: 1.45;
   text-align: center;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  box-sizing: border-box;
 }
 
 .hero__visual {

@@ -13,7 +13,7 @@ export const heroContent = {
   tagline: 'Where every cat feels right at home',
   description:
     'Safe. Peaceful. Cage-free or isolated staycation for your cat in our secure and spacious 2BHK home.',
-  trustLine: 'Safe home boarding • Daily updates • Personalised care',
+  trustLine: 'Safe home boarding • Daily updates • Personalized care',
   primaryCta: { label: "Book Your Cat’s Stay", href: '#booking' },
   secondaryCta: { label: 'View Stay Plans', href: '#stay-plans' },
 }

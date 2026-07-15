@@ -45,7 +45,7 @@ export const stayPlans = [
     id: 'private-stay',
     icon: '🌟',
     name: 'Private Stay',
-    description: 'Isolated Room',
+    description: 'Isolated Tent/Cage',
     price: '₹499',
     unit: 'per Night',
     benefit: 'Quiet, private space for cats who prefer their own room',

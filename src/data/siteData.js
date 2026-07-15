@@ -134,6 +134,38 @@ export const ourStory = {
       srcKey: 'story4',
       alt: 'Loki looking upward in a soft side profile',
     },
+    {
+      srcKey: 'story5',
+      alt: 'Close-up of a ginger kitten gently held by loving hands',
+    },
+    {
+      srcKey: 'story6',
+      alt: 'Black and white portrait of a tabby cat sitting on wood',
+    },
+    {
+      srcKey: 'story7',
+      alt: 'Wide-eyed ginger kitten with a teal collar and bell',
+    },
+    {
+      srcKey: 'story8',
+      alt: 'Loki and Veera sitting on a table looking in opposite directions',
+    },
+    {
+      srcKey: 'story9',
+      alt: 'Ginger tabby cat resting on a wooden table',
+    },
+    {
+      srcKey: 'story10',
+      alt: 'Ginger tabby cat relaxing on a leather couch',
+    },
+    {
+      srcKey: 'story11',
+      alt: 'Loki and Veera sitting close together indoors',
+    },
+    {
+      srcKey: 'story12',
+      alt: 'Close-up of a ginger tabby cat with a silver bell collar',
+    },
   ],
   descriptions: [
     'Veera was brave, playful, curious, and loved being carried. He sadly crossed the rainbow bridge on 12th May but will always be the heart of our story.',

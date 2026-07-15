@@ -745,10 +745,14 @@ textarea:focus-visible {
 .story-carousel__dots {
   position: absolute;
   left: 50%;
-  bottom: 0.75rem;
+  bottom: 0.65rem;
   transform: translateX(-50%);
   display: flex;
-  gap: 0.45rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  width: calc(100% - 1.5rem);
+  max-width: 16rem;
   z-index: 2;
 }
 

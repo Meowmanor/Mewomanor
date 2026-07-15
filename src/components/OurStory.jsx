@@ -3,6 +3,14 @@ import story1 from '../assets/story-1.jpg'
 import story2 from '../assets/story-2.jpg'
 import story3 from '../assets/story-3.jpg'
 import story4 from '../assets/story-4.jpg'
+import story5 from '../assets/story-5.jpg'
+import story6 from '../assets/story-6.jpg'
+import story7 from '../assets/story-7.jpg'
+import story8 from '../assets/story-8.jpg'
+import story9 from '../assets/story-9.jpg'
+import story10 from '../assets/story-10.jpg'
+import story11 from '../assets/story-11.jpg'
+import story12 from '../assets/story-12.jpg'
 import { ourStory } from '../data/siteData'
 import SectionHeading from './SectionHeading'
 
@@ -11,6 +19,14 @@ const slideImages = {
   story2,
   story3,
   story4,
+  story5,
+  story6,
+  story7,
+  story8,
+  story9,
+  story10,
+  story11,
+  story12,
 }
 
 function OurStory() {

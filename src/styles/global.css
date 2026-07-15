@@ -966,7 +966,7 @@ textarea:focus-visible {
   color: var(--color-text);
 }
 
-.form-field input,
+.form-field input:not([type='radio']):not([type='checkbox']),
 .form-field select,
 .form-field textarea {
   width: 100%;
@@ -1008,6 +1008,14 @@ textarea:focus-visible {
   align-items: center;
   gap: 0.4rem;
   font-weight: 600;
+  white-space: nowrap;
+}
+
+.radio-option input {
+  width: auto;
+  min-height: auto;
+  padding: 0;
+  flex-shrink: 0;
 }
 
 /* Contact */
